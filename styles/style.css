@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* ШРИФТ  POPPINS */
 .poppins-regular {
     font-family: "Poppins", sans-serif;
@@ -68,9 +69,15 @@ ul {
 
 
 .header {
-    background-image: url('/image/Rectangle\ 19290.png');
+    position: relative;
+    background-image: url('../image/Rectangle-19290.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 976px;
     padding: 63px 321px 0 321px;
+    user-select: none;
 }
 
 .header-logo-menu {
@@ -103,6 +110,51 @@ ul {
     text-decoration-color: #DF6951;
     text-underline-offset: 4px;
     text-decoration-thickness: 3px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(217 217 217 / 58%);
+    backdrop-filter: blur(100px);
+    border-radius: 16px;
+    min-width: 230px;
+    min-height: 187px;
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    /*margin-top: 1px;*/
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    transition: .2s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
@@ -259,3 +311,30 @@ ul {
     z-index: 7;
     left: 144px;
 }
+
+.scroll_img {
+    position: absolute;
+    top: 794px;
+    left: 28px;
+}
+
+.partners {
+    padding: 75px 171px;
+    /*height: 200px;*/
+    background: #F7F7F7;
+}
+
+.partners-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 179px;
+}
+
+
+
+
+
+
+
+
