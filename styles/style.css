@@ -2,7 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
+
+.main-container {
+    width: 100%;
+    height: 4000px;
+    position: relative;
+}
+
+.title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(223, 105, 81, 1);
+}
+
+.under-title {
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+}
+
 
 /* ШРИФТ  POPPINS */
 .poppins-regular {
@@ -43,7 +67,6 @@
 }
 
 
-
 .button {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -65,15 +88,13 @@ ul {
 }
 
 
-
-
 .header {
     position: relative;
     background-image: url('../image/Rectangle-19290.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     height: 976px;
     padding: 63px 321px 0 321px;
     user-select: none;
@@ -85,17 +106,17 @@ ul {
     align-items: center;
 }
 
-.header-logo-menu>.logo>img {
+.header-logo-menu > .logo > img {
     width: 126.6px;
     height: 64.18px;
 }
 
-.header-logo-menu>.menu>ul {
+.header-logo-menu > .menu > ul {
     display: flex;
     gap: 50px;
 }
 
-.header-logo-menu>.menu>ul>li {
+.header-logo-menu > .menu > ul > li {
     font-weight: 500;
     color: white;
     line-height: 21.5px;
@@ -104,12 +125,13 @@ ul {
     cursor: pointer;
 }
 
-.header-logo-menu>.menu>ul>li:hover {
+.header-logo-menu > .menu > ul > li:hover {
     text-decoration: underline;
     text-decoration-color: #DF6951;
     text-underline-offset: 4px;
     text-decoration-thickness: 3px;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -163,7 +185,7 @@ a {
     margin-top: 168px;
 }
 
-.header-content-text>p {
+.header-content-text > p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: white;
@@ -259,6 +281,7 @@ a {
     font-size: 12.54px;
     line-height: 37.61px;
 }
+
 .clients-text {
     margin-top: 29.54px;
 }
@@ -331,7 +354,6 @@ a {
 }
 
 
-
 .category {
     padding: 0 320px;
     margin-top: 110px;
@@ -347,7 +369,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /*gap: 20px;*/
 }
 
 .category-item-p {
@@ -365,6 +387,8 @@ a {
     font-size: 50px;
     line-height: 64px;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .category-img-text-card {
@@ -397,9 +421,15 @@ a {
 .orange-ball {
     width: 100px;
     height: 100px;
-    background: rgba(223, 105, 81, 1);
+    background: rgb(223, 105, 81, 1);
     border-radius: 30%;
+
+    position: absolute;
+    z-index: -1;
+    top: 267px;
+    right: 202px;
 }
+
 
 .card-text {
     font-family: "Poppins", sans-serif;
@@ -408,6 +438,25 @@ a {
     justify-content: center;
     align-items: center;
     gap: 12px;
+}
+
+.card-2 {
+    position: relative;
+
+}
+
+.into-card {
+    top: 27px;
+    position: relative;
+    width: 267px;
+    height: 314px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 3px 8px 8px 1px rgba(34, 60, 80, 0.2);
+    border-radius: 36px;
+    z-index: 2;
 }
 
 .card-all-text-p {
@@ -426,3 +475,197 @@ a {
     font-size: 20px;
     line-height: 30px;
 }
+
+.card-2-imgs {
+    z-index: 1;
+    left: 108px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+
+}
+
+.airplane {
+    width: 92px;
+    height: 92px;
+}
+
+.beige-ball {
+    width: 50px;
+    height: 49px;
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    left: -10px;
+    transform: scaleX(-1);
+}
+
+
+.card-1-imgs {
+    position: relative;
+}
+
+
+.beige-ball-card-1 {
+    position: absolute;
+    z-index: -1;
+    top: 36px;
+    left: 37px;
+}
+
+.card-3-imgs {
+    position: relative;
+}
+
+.beige-ball-card-3 {
+    position: absolute;
+    top: 25px;
+    left: 33px;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+.card-4-imgs {
+    position: relative;
+}
+
+.beige-ball-card-4 {
+    position: absolute;
+    top: 27px;
+    left: 36px;
+    z-index: -1;
+}
+
+
+.honeymoon-specials {
+    position: relative;
+    margin-top: 343px;
+}
+
+
+.honeymoon-specials-containter {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.hm-text-block {
+    position: relative;
+    width: 583px;
+    height: 380px;
+}
+
+
+.hm-title-p {
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.hm-text {
+    margin-top: 19px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 583px;
+    height: 103px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.hm-button {
+    margin-top: 31px;
+
+    width: 176px;
+    height: 56px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 25.07px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0px 20px 35px 0px #DF695126;
+
+
+}
+
+
+.hm-images-block {
+    position: relative;
+    left: 196px;
+    /*bottom: 402px;*/
+}
+
+.hm-main-image-container {
+    position: relative;
+    bottom: 300px;
+    right: 100px;
+}
+
+.hm-main-img {
+    position: absolute;
+    width: 476px;
+    height: 690px;
+    border-radius: 300px 300px 0 0;
+    z-index: 0;
+}
+
+.hm-line-img {
+    position: absolute;
+    top: -18px;
+    left: 16px;
+    z-index: -1;
+}
+
+.hm-text-img {
+    position: absolute;
+    right: -260px;
+    top: 360px;
+    z-index: -1;
+    /*writing-mode: ;*/
+    width: 593px;
+    height: 68px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    transform: rotate(270deg);
+    color: lightgray;
+
+    font-size: 51.19px;
+    line-height: 67.91px;
+}
+
+
+.hm-ball-img-1 {
+    position: absolute;
+    top: -58px;
+    left: -96px;
+    z-index: 1;
+}
+
+.hm-ball-img-2 {
+    position: absolute;
+    top: 162px;
+    right: -66px ;
+    z-index: 1;
+    filter: drop-shadow(0px 56.42px 87.76px rgba(1, 22, 24, 0.24));
+}
+
+
+.hm-ball-img-3 {
+    position: absolute;
+    top: -70px;
+    left: 60px;
+    z-index: 1;
+    fileter: drop-shadow(0px 56.42px 87.76px rgba(255, 200, 118, 0.35));
+}
+
+
+.hm-plus-img {
+    position: absolute;
+    top: 566px;
+    left: 376px;
+    z-index: -1;
+}
+
+
+
